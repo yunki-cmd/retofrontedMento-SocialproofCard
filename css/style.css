@@ -100,12 +100,13 @@ body{
   flex-direction: column;
 }
 .card__contain__profile__name{
-  margin: 5px;
+  margin: 3px;
   font-weight: 700;
 }
 .card__contain__profile__verify{
-  color: hsl(303, 10%, 53%);
-  font-weight: 700;
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  margin: 3px;
 }
 .card__contain__profile--1,.card__contain__profile--2,.card__contain__profile--3{
   display: inline-block;
@@ -125,4 +126,59 @@ body{
 }
 .card__contain__profile--3{
   top: -30px;
+}
+
+@media  screen and (max-width:376px) {
+  body{
+    width: 375px;
+  }
+  .card__main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+  .card__header{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__header__h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .card__title{
+    font-size: 35px;
+  }
+  .card__header_text{
+    text-align: inherit;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .card__starts,.card__starts--1,.card__starts--2,.card__starts--3{
+    left: -20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+    width: 90%;
+    margin: 1rem;
+  }
+.card__contain{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+  .card__contain__profile--1,.card__contain__profile--2,.card__contain__profile--3{
+    width: 80%;
+    top:0;
+    margin: 1rem 0 1rem 0;
+  }
+  
+  
 }
